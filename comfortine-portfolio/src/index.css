@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  @apply duration-100 ease-in;
+}
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.themeIcons {
+  @apply text-xl cursor-pointer hover:text-blue-400 hover:duration-200 hover:ease-in-out;
+}
+
+.contactIcons {
+  @apply h-6 w-6 hover:bg-opacity-80 rounded-md flex justify-center items-center text-white;
+}
+
+::-webkit-scrollbar {
+  @apply rounded-full w-3 bg-white cursor-pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b w-2 from-fuchsia-600 to-cyan-600 rounded-full cursor-grabbing;
+}
+
+.textGradient {
+  @apply bg-gradient-to-r dark:from-fuchsia-500 dark:to-cyan-500 from-cyan-500 to-blue-500 text-transparent bg-clip-text;
+}
+
+.bgGradient {
+  @apply dark:from-fuchsia-500 dark:to-cyan-500 from-cyan-500 to-blue-500;
+}
